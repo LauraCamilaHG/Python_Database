@@ -11,7 +11,7 @@ def extract_pacient_from_excel(excel_file):
 
     df['DOCUMENT'] = df['DOCUMENT'].astype(str)
     df['FULL_NAME'] = df['NAMES'] + ' ' + df['LAST_NAMES']
-    
+    df['PHONE'] = df['PHONE'].astype(str)
     
     df = df[['DOCUMENT', 'FULL_NAME', 'PHONE', 'EPS']]
 
